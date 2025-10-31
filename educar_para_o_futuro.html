@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Educar para o Futuro — Projeto Nacional</title>
+  <style>
+    :root{--accent:#0b63d6;--muted:#6b7280;--card:#ffffff}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;line-height:1.5;background:#f3f4f6;color:#111827}
+    .container{max-width:1000px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    h1{font-size:26px;margin:0}
+    p.lead{color:var(--muted);margin-top:6px}
+    .hero{background:linear-gradient(180deg,rgba(11,99,214,0.05),transparent);padding:22px;border-radius:12px;margin-top:18px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr} .brand h1{font-size:20px}}
+    .card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:#eef2ff;color:var(--accent);font-weight:600;font-size:13px}
+    .section-title{display:flex;align-items:baseline;gap:12px}
+
+    .cols{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+    @media (max-width:700px){.cols{grid-template-columns:1fr}}
+
+    .cta{display:flex;gap:12px;margin-top:14px}
+    .btn{padding:10px 14px;border-radius:8px;border:0;cursor:pointer;font-weight:600}
+    .btn-primary{background:var(--accent);color:white}
+    .btn-ghost{background:transparent;border:1px solid #e5e7eb;color:var(--accent)}
+
+    footer{padding:22px 0;color:var(--muted);font-size:13px;text-align:center}
+
+    nav a{color:var(--accent);text-decoration:none;margin-left:12px}
+
+    .tile{padding:12px;border-radius:8px;border:1px solid #eef2f3;background:white}
+    .muted{color:var(--muted)}
+
+    pre{white-space:pre-wrap;font-size:13px;background:#0f172a;color:#e6eef8;padding:12px;border-radius:8px;overflow:auto}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">EF</div>
+        <div>
+          <h1>Educar para o Futuro</h1>
+          <div class="muted">Projeto Nacional — Pedro Igor Silva de Souza • Goiânia - GO • 31/10/2025</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">Sobre</a>
+        <a href="#structure">Estrutura</a>
+        <a href="#support">Apoie</a>
+      </nav>
+    </header>
+
+    <section class="hero card">
+      <div style="display:flex;align-items:flex-start;gap:18px">
+        <div style="flex:1">
+          <span class="badge">Projeto Nacional</span>
+          <h2 style="margin-top:10px">Uma nova estrutura de ensino para transformar o Brasil</h2>
+          <p class="lead">Tempo integral, profissionalização precoce, gestão híbrida Estado–Município e valorização do professor — com infraestrutura moderna para todas as escolas públicas.</p>
+
+          <div class="cta">
+            <a class="btn btn-primary" href="Projeto_Educar_para_o_Futuro_Pedro_Igor_Souza.pdf" download>Baixar PDF do Projeto</a>
+            <button class="btn btn-ghost" onclick="document.getElementById('support').scrollIntoView({behavior:'smooth'})">Assine e Apoie</button>
+          </div>
+        </div>
+        <aside style="width:320px">
+          <div class="tile">
+            <strong>Resumo</strong>
+            <p class="muted" style="margin-top:8px">Ensino Primário (6–10), Ensino Fundamental (11–14) e Ensino Médio (15–17). Tempo integral 7h–17h; professores com jaleco branco; infraestrutura completa e cursos profissionalizantes a partir da 7ª série.</p>
+          </div>
+          <div style="height:12px"></div>
+          <div class="tile">
+            <strong>Como participar</strong>
+            <ol class="muted" style="padding-left:18px;margin:8px 0 0 0">
+              <li>Baixe o projeto (PDF).</li>
+              <li>Compartilhe com sua escola ou vereador.</li>
+              <li>Assine a petição pública e nos siga.</li>
+            </ol>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <main style="margin-top:18px">
+
+      <section id="about" class="card">
+        <div class="section-title"><h3 style="margin:0">Sobre o projeto</h3></div>
+        <p class="muted">O projeto propõe integrar redes, padronizar infraestrutura e garantir formação profissional obrigatória aos 14 anos. A proposta une responsabilidades financeiras entre Estado (60%) e Município (40%) e cria escolas de tempo integral com laboratório, piscinas e quadras para todas as unidades.</p>
+      </section>
+
+      <section id="structure" style="margin-top:12px;display:grid;grid-template-columns:1fr;gap:12px">
+        <div class="card">
+          <h4>Estrutura de ensino</h4>
+          <div class="cols">
+            <div>
+              <strong>Ensino Primário</strong>
+              <p class="muted">6–10 anos (1ª–5ª). Alfabetização, brincadeira pedagógica, português, matemática crescente e ensino religioso plural.</p>
+            </div>
+            <div>
+              <strong>Ensino Fundamental</strong>
+              <p class="muted">11–14 anos (6ª–9ª). Inclusão digital, cursos profissionalizantes (a partir da 7ª) e TCC ao final.</p>
+            </div>
+            <div>
+              <strong>Ensino Médio</strong>
+              <p class="muted">15–17 anos (1ª–3ª). Disciplinas científicas, finanças, filosofia, sociologia e estágio remunerado.</p>
+            </div>
+            <div>
+              <strong>Docência e rotina</strong>
+              <p class="muted">Professores em jornada de 10h (seg-sex); jaleco branco; provas e eventos aos sábados.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4>Infraestrutura mínima</h4>
+          <ul class="muted">
+            <li>Salas climatizadas e com câmeras</li>
+            <li>Quadras poliesportivas e piscinas (fundamental)</li>
+            <li>Laboratórios de Biologia, Física e Química</li>
+            <li>Laboratório de Informática para cursos EAD</li>
+            <li>Biblioteca, refeitório e áreas de convivência</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <section id="support" class="card" style="margin-top:12px">
+        <h4>Assine e apoie</h4>
+        <p class="muted">Se você acredita nesta transformação, assine a petição, compartilhe com sua rede e envie o projeto a autoridades locais.</p>
+
+        <form onsubmit="event.preventDefault();alert('Obrigado! Sua assinatura foi registrada localmente — para coletar assinaturas reais, publique a página e conecte um serviço de formulários.');">
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <input type="text" placeholder="Seu nome completo" required style="flex:1;padding:10px;border-radius:8px;border:1px solid #e5e7eb">
+            <input type="email" placeholder="Seu email" required style="flex:1;min-width:220px;padding:10px;border-radius:8px;border:1px solid #e5e7eb">
+            <button class="btn btn-primary" type="submit">Assinar o projeto</button>
+          </div>
+        </form>
+
+        <div style="margin-top:12px;display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn btn-ghost" href="#" onclick="navigator.clipboard.writeText(window.location
